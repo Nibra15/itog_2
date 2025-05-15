@@ -1,0 +1,5 @@
+FROM alpine:latest
+EXPOSE 80
+WORKDIR /service
+COPY ./bin/core-service /service/math-service
+CMD ["/service/math-service"]
